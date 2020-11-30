@@ -54,7 +54,7 @@ O método update é o mais complexo da nossa classe CRUD, já que possui algumas
 
 Agora temos três situações:
 
-- **Tamanho do registro novo é maior do que o tamanho do registro antigo**: Nessa situação temos que "matar" o registro antigo e escrever o novo objeto no final do arquivo. Aqui não podemos esquecer de atualizar o indice direto do id para sua nova posição.
+- **Tamanho do registro novo é maior do que o tamanho do registro antigo**: Nessa situação temos que "matar" o registro antigo e escrever o novo objeto no final do arquivo. Aqui não podemos esquecer de atualizar o indice direto do id para sua nova posição no arquivo.
 
 - **Tamanho do registro novo menor ou igual ao tamanho do registro antigo**: Nessa situação, sobreescrevemos o novo array de bytes sobre o registro antigo, pulando o lapide e o id;
 
